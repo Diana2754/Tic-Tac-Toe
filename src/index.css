@@ -1,0 +1,67 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #313131;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+button {
+  border-radius: 2px;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  width: 100px; /* Tamaño fijo */
+  height: 100px; /* Tamaño fijo */
+  font-size: 2rem; /* Tamaño del texto */
+  font-weight: bold;
+  color: white;
+  background-color: #444;
+  border: 2px solid #fff;
+  display: flex; /* Para centrar el contenido */
+  justify-content: center;
+  align-items:center;
+
+}
+
+.board-row {
+  display: grid;
+  grid-template-columns: repeat(3, 100px); /* Tres columnas de 100px */
+  gap: 5px; /* Espacio entre los botones de cada fila */
+  justify-content: center;
+  align-items:center;
+ 
+}
+
+.start{
+  display: grid;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 30%; /* Asegúrate de que el contenedor ocupe toda la altura de la ventana */
+  width: 30%; /* Asegúrate de que el contenedor ocupe todo el ancho */
+  padding-left: 50%;
+  border: none;
+  background-color: #313131;
+  transition: all 0.3s ease;
+}
+
+
+
+.start:hover {
+  /*background: linear-gradient(90deg, #ff007a, #ff7b00); 
+  
+  box-shadow: 0 8px 20px rgba(255, 123, 0, 0.6);  */
+  transform: scale(1.1); 
+}
