@@ -1,4 +1,4 @@
-import Square from "./square";
+import Square from "./Square";
 
 export default function Board({square, partida}){
       

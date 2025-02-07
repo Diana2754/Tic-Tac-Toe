@@ -1,9 +1,7 @@
 import { useState } from 'react'
-import ReactDOM from 'react-dom';
 import './App.css'
 import Board from './Board'
-import Square from './square'
-import square from './style.jsx'
+
 
 
 export default function App(){
@@ -72,16 +70,6 @@ export default function App(){
       }
     }
 
-function cambiarTurno(index) {
-
-  //partida()
-  if (square[index] || winner) {
-    finalizarPartida(winner);
-  } else {
-    setTurn(!turn); 
-
-  }
-}
 
     function partida(index){
       
